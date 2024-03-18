@@ -1,0 +1,29 @@
+div{
+    width: 2%;
+    aspect-ratio: 1/1;
+    border: 5px solid red;
+    border-radius: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+
+    animation-name: waterDrop;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes waterDrop {
+    0%{
+        width: 1%;
+        aspect-ratio: 1/1;
+        border: 2px solid rgba(255, 0, 0, 1);
+    }
+    100%{
+        width: 20%;
+        aspect-ratio: 1/1;
+        border: 2px solid rgba(255, 0, 0, 0.0);
+    }
+}

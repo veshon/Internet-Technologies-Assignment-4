@@ -1,0 +1,108 @@
+section>div:first-child{
+    width: 100vw;
+    height: 70vh;
+    background-image: url("assets/images/sky.jpg");
+}
+
+section>div:nth-child(2){
+    width: 100vw;
+    height: 50vh;
+    background-image: url("assets/images/road.jpg");
+    position: absolute;
+    top: 60vh;
+    background-repeat: no-repeat;
+
+    animation-name: road;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes road {
+    from{
+        transform: translateX(25%);
+    }
+    to{
+        transform: translateX(-25%);
+    }
+}
+
+section>div:nth-child(3){
+    width: 100vw;
+    height: 70vh;
+    background-image: url("assets/images/city.png");
+    position: absolute;
+    top: 18.3vh;
+    background-repeat: no-repeat;
+    animation-name: city;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes city {
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(-25%);
+    }
+}
+
+section>div:nth-child(4){
+    width: 30vw;
+    height: 30vh;
+    background-image: url("assets/images/car.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 10px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+}
+
+section>div:nth-child(5){
+    width: 80px;
+    aspect-ratio: 1/1;
+    background-image: url("assets/images/wheel.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 90px;
+    bottom: 0;
+    right: 0;
+    left: -280px;
+    margin: auto;
+}
+
+section>div:nth-child(6){
+    width: 80px;
+    aspect-ratio: 1/1;
+    background-image: url("assets/images/wheel.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 90px;
+    bottom: 0;
+    right: -250px;
+    left: 0;
+    margin: auto;
+
+    animation-name: wheels;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes wheels {
+    from {
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(25%);
+    }
+}
