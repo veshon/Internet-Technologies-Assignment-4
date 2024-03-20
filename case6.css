@@ -69,6 +69,18 @@ section>div:nth-child(4){
     left: 0;
     margin: auto;
     z-index: 2;
+
+    animation: car 5s linear infinite;
+}
+
+@keyframes car {
+    0%{
+        transform: translateY(-1px);
+    }    50%{
+        transform: translateY(-1px);
+    }    100%{
+        transform: translateY(-1px);
+    }
 }
 
 section>div:nth-child(5){
