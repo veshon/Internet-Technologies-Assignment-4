@@ -1,54 +1,57 @@
 section>div:first-child{
     width: 100vw;
-    height: 70vh;
+    height: 100vh;
     background-image: url("assets/images/sky.jpg");
-
+    background-position: center;
+    position: relative;
+    background-size: cover;
+    overflow: hidden;
 }
 
 section>div:nth-child(2){
-    width: 100vw;
-    height: 50vh;
+    width: 500%;
+    height: 200px;
+    display: block;
     background-image: url("assets/images/road.jpg");
     position: absolute;
-    top: 60vh;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background-repeat: repeat-x;
 
     animation-name: road;
     animation-duration: 5s;
+    animation-timing-function: linear;
     animation-iteration-count: infinite;
 }
 
 
 @keyframes road {
-    from{
-        transform: translateX(25%);
-    }
-    to{
-        transform: translateX(-25%);
+    100%{
+        transform: translateX(-3000px);
     }
 }
 
 section>div:nth-child(3){
-    width: 100vw;
-    height: 70vh;
+    width: 500%;
+    height: 250px;
     background-image: url("assets/images/city.png");
     position: absolute;
-    top: 18.3vh;
-    background-repeat: no-repeat;
+    bottom: 200px;
+    /*z-index: 1;*/
+    background-repeat: repeat-x;
     animation-name: city;
     animation-duration: 5s;
     animation-iteration-count: infinite;
+    animation-timing-function: linear;
 
 }
 
 @keyframes city {
-    0%{
-        transform: translateX(0);
-    }
+
     100%{
-        transform: translateX(-25%);
+        transform: translateX(-1000px);
     }
 }
 
@@ -109,7 +112,7 @@ section>div:nth-child(6){
 
 @keyframes wheels {
     from {
-        transform: rotate(-180deg);
+        transform: rotate(-360deg);
     }
     to{
     }
