@@ -2,6 +2,7 @@ section>div:first-child{
     width: 100vw;
     height: 70vh;
     background-image: url("assets/images/sky.jpg");
+
 }
 
 section>div:nth-child(2){
@@ -11,6 +12,8 @@ section>div:nth-child(2){
     position: absolute;
     top: 60vh;
     background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 
     animation-name: road;
     animation-duration: 5s;
@@ -37,6 +40,7 @@ section>div:nth-child(3){
     animation-name: city;
     animation-duration: 5s;
     animation-iteration-count: infinite;
+
 }
 
 @keyframes city {
@@ -76,6 +80,11 @@ section>div:nth-child(5){
     right: 0;
     left: -280px;
     margin: auto;
+
+    animation-name: wheels;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 }
 
 section>div:nth-child(6){
@@ -93,16 +102,15 @@ section>div:nth-child(6){
     margin: auto;
 
     animation-name: wheels;
-    animation-duration: 5s;
+    animation-duration: 4s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
 }
 
 @keyframes wheels {
     from {
-        transform: translateX(0);
+        transform: rotate(-180deg);
     }
     to{
-        transform: translateX(25%);
     }
 }
