@@ -39,7 +39,6 @@ section>div:nth-child(3){
     background-image: url("assets/images/city.png");
     position: absolute;
     bottom: 200px;
-    /*z-index: 1;*/
     background-repeat: repeat-x;
     animation-name: city;
     animation-duration: 5s;
@@ -126,9 +125,8 @@ section>div:nth-child(6){
 }
 
 @keyframes wheels {
-    from {
+    100% {
         transform: rotate(-360deg);
     }
-    to{
-    }
+
 }
