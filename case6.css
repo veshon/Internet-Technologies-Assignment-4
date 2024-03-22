@@ -48,7 +48,6 @@ section>div:nth-child(3){
 }
 
 @keyframes city {
-
     100%{
         transform: translateX(-1000px);
     }
